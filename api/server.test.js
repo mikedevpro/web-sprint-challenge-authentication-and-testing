@@ -63,7 +63,7 @@ describe('[POST] /api/auth/login', () => {
   });
 })
 
-describe(['GET'], '/api/jokes', () => {
+describe('[GET], /api/jokes', () => {
   const endpoint = '/api/jokes';
   test('responds with correct message if no token is provided', async () => {
     const res = await request(server).get(endpoint);
